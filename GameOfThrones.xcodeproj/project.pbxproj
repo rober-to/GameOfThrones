@@ -77,6 +77,12 @@
 		B9C0F76321F7471A00D99F67 /* GameOfThrones */ = {
 			isa = PBXGroup;
 			children = (
+				B9C0F78421F7472400D99F67 /* Network */,
+				B9C0F78521F7472B00D99F67 /* Endpoints */,
+				B9C0F78721F7477400D99F67 /* Model */,
+				B9C0F78821F7477D00D99F67 /* View */,
+				B9C0F78921F7479600D99F67 /* ViewModel */,
+				B9C0F78621F7476100D99F67 /* Controller */,
 				B9C0F76421F7471A00D99F67 /* AppDelegate.swift */,
 				B9C0F76621F7471A00D99F67 /* ViewController.swift */,
 				B9C0F76821F7471A00D99F67 /* Main.storyboard */,
@@ -94,6 +100,48 @@
 				B9C0F77B21F7471B00D99F67 /* Info.plist */,
 			);
 			path = GameOfThronesTests;
+			sourceTree = "<group>";
+		};
+		B9C0F78421F7472400D99F67 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B9C0F78521F7472B00D99F67 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		B9C0F78621F7476100D99F67 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B9C0F78721F7477400D99F67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B9C0F78821F7477D00D99F67 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9C0F78921F7479600D99F67 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
