@@ -1,11 +1,5 @@
 //
 //  AppDelegate.swift
-//  GameOfThrones
-//
-//  Created by Roberto Ferraz on 22.01.19.
-//  Copyright © 2019 Roberto Ferraz. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
