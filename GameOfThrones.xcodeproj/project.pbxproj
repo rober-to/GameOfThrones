@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B965234521FDFD5D00B5CEDE /* HouseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965234421FDFD5D00B5CEDE /* HouseViewModel.swift */; };
+		B965234721FDFD7A00B5CEDE /* HouseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965234621FDFD7A00B5CEDE /* HouseService.swift */; };
+		B965234921FDFEBB00B5CEDE /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965234821FDFEBB00B5CEDE /* House.swift */; };
+		B965234B21FE02A500B5CEDE /* HouseNetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965234A21FE02A500B5CEDE /* HouseNetworkServiceTests.swift */; };
+		B965234D21FE037900B5CEDE /* HouseViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965234C21FE037900B5CEDE /* HouseViewModelTests.swift */; };
 		B9C0F76521F7471A00D99F67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C0F76421F7471A00D99F67 /* AppDelegate.swift */; };
 		B9C0F76721F7471A00D99F67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C0F76621F7471A00D99F67 /* ViewController.swift */; };
 		B9C0F76A21F7471A00D99F67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9C0F76821F7471A00D99F67 /* Main.storyboard */; };
 		B9C0F76C21F7471B00D99F67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C0F76B21F7471B00D99F67 /* Assets.xcassets */; };
 		B9C0F76F21F7471B00D99F67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9C0F76D21F7471B00D99F67 /* LaunchScreen.storyboard */; };
 		B9C0F77A21F7471B00D99F67 /* GameOfThronesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C0F77921F7471B00D99F67 /* GameOfThronesTests.swift */; };
+		B9C0F78F21F7482500D99F67 /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C0F78E21F7482500D99F67 /* NetworkEngine.swift */; };
+		B9C0F79121F7483300D99F67 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C0F79021F7483300D99F67 /* NetworkService.swift */; };
+		B9C0F79321F7484100D99F67 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C0F79221F7484100D99F67 /* Endpoint.swift */; };
+		B9C0F79521F7494200D99F67 /* HouseEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C0F79421F7494200D99F67 /* HouseEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B965234621FDFD7A00B5CEDE /* HouseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseService.swift; sourceTree = "<group>"; };
+		B965234821FDFEBB00B5CEDE /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		B965234A21FE02A500B5CEDE /* HouseNetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseNetworkServiceTests.swift; sourceTree = "<group>"; };
 		B9C0F76121F7471A00D99F67 /* GameOfThrones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfThrones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9C0F76421F7471A00D99F67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9C0F76621F7471A00D99F67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +48,10 @@
 		B9C0F77521F7471B00D99F67 /* GameOfThronesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfThronesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9C0F77921F7471B00D99F67 /* GameOfThronesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfThronesTests.swift; sourceTree = "<group>"; };
 		B9C0F77B21F7471B00D99F67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9C0F78E21F7482500D99F67 /* NetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
+		B9C0F79021F7483300D99F67 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B9C0F79221F7484100D99F67 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		B9C0F79421F7494200D99F67 /* HouseEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				B9C0F77921F7471B00D99F67 /* GameOfThronesTests.swift */,
+				B965234A21FE02A500B5CEDE /* HouseNetworkServiceTests.swift */,
 				B9C0F77B21F7471B00D99F67 /* Info.plist */,
 			);
 			path = GameOfThronesTests;
@@ -105,6 +122,9 @@
 		B9C0F78421F7472400D99F67 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				B9C0F78E21F7482500D99F67 /* NetworkEngine.swift */,
+				B9C0F79021F7483300D99F67 /* NetworkService.swift */,
+				B9C0F79221F7484100D99F67 /* Endpoint.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -112,6 +132,8 @@
 		B9C0F78521F7472B00D99F67 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
+				B9C0F79421F7494200D99F67 /* HouseEndpoint.swift */,
+				B965234621FDFD7A00B5CEDE /* HouseService.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -126,6 +148,7 @@
 		B9C0F78721F7477400D99F67 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B965234821FDFEBB00B5CEDE /* House.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,6 +270,12 @@
 			files = (
 				B9C0F76721F7471A00D99F67 /* ViewController.swift in Sources */,
 				B9C0F76521F7471A00D99F67 /* AppDelegate.swift in Sources */,
+				B9C0F79121F7483300D99F67 /* NetworkService.swift in Sources */,
+				B965234921FDFEBB00B5CEDE /* House.swift in Sources */,
+				B9C0F79521F7494200D99F67 /* HouseEndpoint.swift in Sources */,
+				B9C0F78F21F7482500D99F67 /* NetworkEngine.swift in Sources */,
+				B965234721FDFD7A00B5CEDE /* HouseService.swift in Sources */,
+				B9C0F79321F7484100D99F67 /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9C0F77A21F7471B00D99F67 /* GameOfThronesTests.swift in Sources */,
+				B965234B21FE02A500B5CEDE /* HouseNetworkServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GameOfThrones/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -427,6 +458,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GameOfThrones/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
