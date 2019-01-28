@@ -16,5 +16,4 @@ struct House: Decodable {
     private(set) var diedOut: String
     private(set) var ancestralWeapons: [String]
     private(set) var cadetBranches: [String]
-    private(set) var swornMembers: [String]
 }

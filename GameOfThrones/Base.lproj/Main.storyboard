@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Houses View Controller-->
+        <!--Houses-->
         <scene sceneID="S0i-rf-HT7">
             <objects>
                 <tableViewController id="qmt-3a-mRT" customClass="HousesViewController" customModule="GameOfThrones" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HouseCell" textLabel="qyc-2Y-RZA" detailTextLabel="T8w-gT-RvB" rowHeight="64" style="IBUITableViewCellStyleSubtitle" id="bQP-Vx-oeO" customClass="HouseTableViewCell" customModule="GameOfThrones" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BasicCell" textLabel="qyc-2Y-RZA" detailTextLabel="T8w-gT-RvB" rowHeight="64" style="IBUITableViewCellStyleSubtitle" id="bQP-Vx-oeO" customClass="HouseTableViewCell" customModule="GameOfThrones" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bQP-Vx-oeO" id="z5H-Ik-K9b">
@@ -41,6 +41,10 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleLabel" destination="qyc-2Y-RZA" id="i8B-Yq-c7Z"/>
+                                    <outlet property="valueLabel" destination="T8w-gT-RvB" id="3sG-jB-Fxe"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -48,7 +52,7 @@
                             <outlet property="delegate" destination="qmt-3a-mRT" id="ODB-1Q-2ry"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Bqi-JS-8n5"/>
+                    <navigationItem key="navigationItem" title="Houses" id="Bqi-JS-8n5"/>
                     <connections>
                         <segue destination="010-3w-fkx" kind="show" identifier="HouseDetailSegue" id="hSQ-mY-sSh"/>
                     </connections>
@@ -61,12 +65,12 @@
         <scene sceneID="Fj7-Xw-7gZ">
             <objects>
                 <tableViewController id="010-3w-fkx" customClass="HouseDetailViewController" customModule="GameOfThrones" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NND-4e-Wlg">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NND-4e-Wlg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="HeaderCell" rowHeight="110" id="2ne-gq-Ey3" customClass="DetailTableViewCell" customModule="GameOfThrones" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="HeaderCell" rowHeight="110" id="2ne-gq-Ey3" customClass="HouseTableViewCell" customModule="GameOfThrones" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2ne-gq-Ey3" id="qCa-f2-gd7">
@@ -91,21 +95,21 @@
                                     <outlet property="titleLabel" destination="qpy-fS-msn" id="e4f-Dz-OtC"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BasicCell" rowHeight="81" id="BuK-5B-kWE" customClass="DetailTableViewCell" customModule="GameOfThrones" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BasicCell" rowHeight="81" id="BuK-5B-kWE" customClass="HouseTableViewCell" customModule="GameOfThrones" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="138" width="375" height="81"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BuK-5B-kWE" id="XHk-vV-tIj">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label dsasada dasa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QaK-FN-OX6">
-                                            <rect key="frame" x="20" y="10" width="154.5" height="20.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QaK-FN-OX6">
+                                            <rect key="frame" x="20" y="10" width="43" height="21"/>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tg3-7E-sFc">
-                                            <rect key="frame" x="36" y="40.5" width="303" height="20.5"/>
+                                            <rect key="frame" x="36" y="41" width="303" height="20"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -126,7 +130,7 @@
                                     <outlet property="valueLabel" destination="tg3-7E-sFc" id="ZIG-6M-4Bd"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationLevel="5" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="41" id="b2H-zd-se9" customClass="DetailTableViewCell" customModule="GameOfThrones" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationLevel="5" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="41" id="b2H-zd-se9" customClass="HouseTableViewCell" customModule="GameOfThrones" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="219" width="375" height="41"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b2H-zd-se9" id="qwH-Mt-Mtf">
@@ -157,10 +161,13 @@
                             <outlet property="delegate" destination="010-3w-fkx" id="Jxd-3L-4DX"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="mVj-iY-Pih" kind="show" identifier="CharacterSegue" id="RSl-QI-5UO"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MwK-s7-oge" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704.8" y="794.75262368815595"/>
+            <point key="canvasLocation" x="1714" y="795"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qrt-32-hVz">
@@ -179,6 +186,86 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wrb-fo-5lR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="791.15442278860576"/>
+        </scene>
+        <!--Character-->
+        <scene sceneID="oGu-az-iC6">
+            <objects>
+                <tableViewController title="Character" id="mVj-iY-Pih" customClass="CharacterTableViewController" customModule="GameOfThrones" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rml-aS-FWV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BasicCell" rowHeight="81" id="G3c-nQ-T81" customClass="HouseTableViewCell" customModule="GameOfThrones" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="81"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G3c-nQ-T81" id="g33-uC-tg0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMQ-h8-rQN">
+                                            <rect key="frame" x="20" y="10" width="43" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nau-Ta-iRZ">
+                                            <rect key="frame" x="36" y="41" width="303" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Nau-Ta-iRZ" secondAttribute="bottom" constant="20" id="7Rv-HR-JO8"/>
+                                        <constraint firstItem="Nau-Ta-iRZ" firstAttribute="top" secondItem="zMQ-h8-rQN" secondAttribute="bottom" constant="10" id="BiF-Ql-Di6"/>
+                                        <constraint firstItem="zMQ-h8-rQN" firstAttribute="leading" secondItem="g33-uC-tg0" secondAttribute="leading" constant="20" id="F7R-EU-sKO"/>
+                                        <constraint firstItem="Nau-Ta-iRZ" firstAttribute="leading" secondItem="g33-uC-tg0" secondAttribute="leadingMargin" constant="20" id="JDB-m9-Ozj"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Nau-Ta-iRZ" secondAttribute="trailing" constant="20" id="LCb-8b-9f2"/>
+                                        <constraint firstItem="zMQ-h8-rQN" firstAttribute="top" secondItem="g33-uC-tg0" secondAttribute="top" constant="10" id="eXd-wd-GKc"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zMQ-h8-rQN" secondAttribute="trailing" constant="200.5" id="w3n-ZE-fh5"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleLabel" destination="zMQ-h8-rQN" id="juQ-Hg-f8e"/>
+                                    <outlet property="valueLabel" destination="Nau-Ta-iRZ" id="LIM-TR-2JP"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationLevel="5" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="41" id="kIK-j1-4cX" customClass="HouseTableViewCell" customModule="GameOfThrones" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="109" width="375" height="41"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kIK-j1-4cX" id="Rby-p1-prW">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hst-2A-Gyj">
+                                            <rect key="frame" x="60" y="10" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Hst-2A-Gyj" secondAttribute="trailing" constant="20" id="5Zh-0w-tl9"/>
+                                        <constraint firstItem="Hst-2A-Gyj" firstAttribute="top" secondItem="Rby-p1-prW" secondAttribute="top" constant="10" id="A0o-uJ-ziT"/>
+                                        <constraint firstItem="Hst-2A-Gyj" firstAttribute="leading" secondItem="Rby-p1-prW" secondAttribute="leading" constant="60" id="AkD-gi-pDV"/>
+                                        <constraint firstAttribute="bottom" secondItem="Hst-2A-Gyj" secondAttribute="bottom" constant="10" id="qRk-mJ-haM"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleLabel" destination="Hst-2A-Gyj" id="f9d-sG-ycN"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mVj-iY-Pih" id="MBN-iq-qFr"/>
+                            <outlet property="delegate" destination="mVj-iY-Pih" id="PSG-de-pKI"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xwG-qp-pE2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2506" y="795"/>
         </scene>
     </scenes>
 </document>

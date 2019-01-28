@@ -1,8 +1,9 @@
 import UIKit
 
-class HouseViewModel {
+typealias FetchCompletion = (Error?) -> Void
 
-    typealias FetchCompletion = (Error?) -> Void
+class HouseViewModel: ViewModel {
+    var sections = [Section]()
 
     private var houseService: HouseService
     private var houses = [House]()
@@ -13,9 +14,8 @@ class HouseViewModel {
     init(houseService: HouseService, fetchCompletion: @escaping FetchCompletion) {
         self.houseService = houseService
         self.fetchCompletion = fetchCompletion
+        fetchHouses()
     }
-
-    func house(at index: Int) -> House { return houses[index] }
 
     func fetchHouses() {
         guard !isLoading else { return }
@@ -26,13 +26,27 @@ class HouseViewModel {
 
             self.isLoading = false
 
-            switch result {
-            case .failure(let error):
-                self.fetchCompletion(error)
-            case .success(let houses):
-                self.houses = houses
-                DispatchQueue.main.async { self.fetchCompletion(nil) }
+            DispatchQueue.main.async {
+                switch result {
+                case .failure(let error):
+                    self.fetchCompletion(error)
+                case .success(let houses):
+                    self.houses = houses
+                    self.createList(of: houses)
+                    self.fetchCompletion(nil)
+                }
             }
         }
+    }
+
+    func house(at index: Int) -> House { return houses[index] }
+
+    private func createList(of houses: [House]) {
+        var cells = [Cell]()
+        for house in houses {
+            addBasicCells(to: &cells, title: house.name, text: house.region, segue: "HouseDetailSegue")
+        }
+        guard !cells.isEmpty else { return }
+        sections.append(Section(title: nil, cells: cells))
     }
 }

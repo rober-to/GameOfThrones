@@ -12,15 +12,17 @@
 		B965234921FDFEBB00B5CEDE /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965234821FDFEBB00B5CEDE /* House.swift */; };
 		B965234B21FE02A500B5CEDE /* HouseNetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965234A21FE02A500B5CEDE /* HouseNetworkServiceTests.swift */; };
 		B965234D21FE037900B5CEDE /* HouseViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965234C21FE037900B5CEDE /* HouseViewModelTests.swift */; };
-		B965234F21FE06C400B5CEDE /* HouseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965234E21FE06C400B5CEDE /* HouseTableViewCell.swift */; };
 		B965235321FE12DA00B5CEDE /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965235221FE12DA00B5CEDE /* HouseDetailViewController.swift */; };
 		B965235521FE175600B5CEDE /* HouseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965235421FE175600B5CEDE /* HouseDetailViewModel.swift */; };
 		B965235721FE186F00B5CEDE /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965235621FE186F00B5CEDE /* Cell.swift */; };
-		B965235921FE2EDA00B5CEDE /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965235821FE2EDA00B5CEDE /* DetailTableViewCell.swift */; };
+		B965235921FE2EDA00B5CEDE /* HouseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965235821FE2EDA00B5CEDE /* HouseTableViewCell.swift */; };
 		B965235E21FF22A000B5CEDE /* CharacterEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965235D21FF22A000B5CEDE /* CharacterEndpoint.swift */; };
 		B965236021FF22B000B5CEDE /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965235F21FF22B000B5CEDE /* CharacterService.swift */; };
 		B965236221FF242D00B5CEDE /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965236121FF242D00B5CEDE /* Character.swift */; };
 		B965236421FF24EE00B5CEDE /* CharacterNetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965236321FF24EE00B5CEDE /* CharacterNetworkServiceTests.swift */; };
+		B965236B21FF2FEC00B5CEDE /* GameOfThronesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965236A21FF2FEC00B5CEDE /* GameOfThronesTableViewController.swift */; };
+		B965236F21FF378300B5CEDE /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965236E21FF378300B5CEDE /* ViewModelProtocol.swift */; };
+		B965237221FF3B8E00B5CEDE /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965237121FF3B8E00B5CEDE /* UIViewController.swift */; };
 		B9C0F76521F7471A00D99F67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C0F76421F7471A00D99F67 /* AppDelegate.swift */; };
 		B9C0F76721F7471A00D99F67 /* HousesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C0F76621F7471A00D99F67 /* HousesViewController.swift */; };
 		B9C0F76A21F7471A00D99F67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9C0F76821F7471A00D99F67 /* Main.storyboard */; };
@@ -49,15 +51,17 @@
 		B965234821FDFEBB00B5CEDE /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		B965234A21FE02A500B5CEDE /* HouseNetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseNetworkServiceTests.swift; sourceTree = "<group>"; };
 		B965234C21FE037900B5CEDE /* HouseViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewModelTests.swift; sourceTree = "<group>"; };
-		B965234E21FE06C400B5CEDE /* HouseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTableViewCell.swift; sourceTree = "<group>"; };
 		B965235221FE12DA00B5CEDE /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
 		B965235421FE175600B5CEDE /* HouseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewModel.swift; sourceTree = "<group>"; };
 		B965235621FE186F00B5CEDE /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
-		B965235821FE2EDA00B5CEDE /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		B965235821FE2EDA00B5CEDE /* HouseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTableViewCell.swift; sourceTree = "<group>"; };
 		B965235D21FF22A000B5CEDE /* CharacterEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterEndpoint.swift; sourceTree = "<group>"; };
 		B965235F21FF22B000B5CEDE /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
 		B965236121FF242D00B5CEDE /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		B965236321FF24EE00B5CEDE /* CharacterNetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterNetworkServiceTests.swift; sourceTree = "<group>"; };
+		B965236A21FF2FEC00B5CEDE /* GameOfThronesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfThronesTableViewController.swift; sourceTree = "<group>"; };
+		B965236E21FF378300B5CEDE /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		B965237121FF3B8E00B5CEDE /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		B9C0F76121F7471A00D99F67 /* GameOfThrones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfThrones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9C0F76421F7471A00D99F67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9C0F76621F7471A00D99F67 /* HousesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,14 @@
 			path = Character;
 			sourceTree = "<group>";
 		};
+		B965237021FF3B8000B5CEDE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B965237121FF3B8E00B5CEDE /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B9C0F75821F7471A00D99F67 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +149,7 @@
 				B9C0F78821F7477D00D99F67 /* View */,
 				B9C0F78921F7479600D99F67 /* ViewModel */,
 				B9C0F78621F7476100D99F67 /* Controller */,
+				B965237021FF3B8000B5CEDE /* Extensions */,
 				B9C0F76421F7471A00D99F67 /* AppDelegate.swift */,
 				B9C0F76821F7471A00D99F67 /* Main.storyboard */,
 				B9C0F76B21F7471B00D99F67 /* Assets.xcassets */,
@@ -180,6 +193,7 @@
 		B9C0F78621F7476100D99F67 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B965236A21FF2FEC00B5CEDE /* GameOfThronesTableViewController.swift */,
 				B9C0F76621F7471A00D99F67 /* HousesViewController.swift */,
 				B965235221FE12DA00B5CEDE /* HouseDetailViewController.swift */,
 			);
@@ -199,8 +213,7 @@
 		B9C0F78821F7477D00D99F67 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B965234E21FE06C400B5CEDE /* HouseTableViewCell.swift */,
-				B965235821FE2EDA00B5CEDE /* DetailTableViewCell.swift */,
+				B965235821FE2EDA00B5CEDE /* HouseTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,8 +221,10 @@
 		B9C0F78921F7479600D99F67 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B965236E21FF378300B5CEDE /* ViewModelProtocol.swift */,
 				B965234421FDFD5D00B5CEDE /* HouseViewModel.swift */,
 				B965235421FE175600B5CEDE /* HouseDetailViewModel.swift */,
+				B965236721FF292400B5CEDE /* CharacterDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -317,20 +332,22 @@
 			files = (
 				B965235521FE175600B5CEDE /* HouseDetailViewModel.swift in Sources */,
 				B965234521FDFD5D00B5CEDE /* HouseViewModel.swift in Sources */,
-				B965235921FE2EDA00B5CEDE /* DetailTableViewCell.swift in Sources */,
+				B965235921FE2EDA00B5CEDE /* HouseTableViewCell.swift in Sources */,
 				B9C0F76721F7471A00D99F67 /* HousesViewController.swift in Sources */,
 				B9C0F76521F7471A00D99F67 /* AppDelegate.swift in Sources */,
 				B9C0F79121F7483300D99F67 /* NetworkService.swift in Sources */,
 				B965235721FE186F00B5CEDE /* Cell.swift in Sources */,
 				B965235E21FF22A000B5CEDE /* CharacterEndpoint.swift in Sources */,
-				B965234F21FE06C400B5CEDE /* HouseTableViewCell.swift in Sources */,
 				B965234921FDFEBB00B5CEDE /* House.swift in Sources */,
 				B9C0F79521F7494200D99F67 /* HouseEndpoint.swift in Sources */,
 				B9C0F78F21F7482500D99F67 /* NetworkEngine.swift in Sources */,
 				B965234721FDFD7A00B5CEDE /* HouseService.swift in Sources */,
+				B965237221FF3B8E00B5CEDE /* UIViewController.swift in Sources */,
 				B9C0F79321F7484100D99F67 /* Endpoint.swift in Sources */,
 				B965235321FE12DA00B5CEDE /* HouseDetailViewController.swift in Sources */,
+				B965236F21FF378300B5CEDE /* ViewModelProtocol.swift in Sources */,
 				B965236221FF242D00B5CEDE /* Character.swift in Sources */,
+				B965236B21FF2FEC00B5CEDE /* GameOfThronesTableViewController.swift in Sources */,
 				B965236021FF22B000B5CEDE /* CharacterService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

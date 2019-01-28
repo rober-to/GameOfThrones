@@ -2,7 +2,7 @@
 import XCTest
 
 
-class BeachViewModelTests: XCTestCase {
+class HouseViewModelTests: XCTestCase {
 
     class MockHouseService: HouseService {
 
@@ -13,7 +13,7 @@ class BeachViewModelTests: XCTestCase {
         }
     }
 
-    func testFetchesImagesTillEmptyResults() {
+    func testFetchesResults() {
         let service = MockHouseService()
 
         let houseViewModel = HouseViewModel(houseService: service) { (error) in
