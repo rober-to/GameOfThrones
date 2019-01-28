@@ -4,17 +4,24 @@ class HousesViewController: UITableViewController {
 
     private var houseViewModel: HouseViewModel!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func awakeFromNib() {
+        super.awakeFromNib()
         self.houseViewModel = HouseViewModel(houseService: HouseService(), fetchCompletion: { [unowned self] (error) in
             self.tableView.reloadData()
         })
+    }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.tableView.tableFooterView = UIView(frame: .zero)
         houseViewModel.fetchHousees()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+        let selectedIndexPath = tableView.indexPathForSelectedRow!
+        let house = houseViewModel.house(at: selectedIndexPath.row)
+        let destination = segue.destination as! HouseDetailViewController
+        destination.house = house
     }
 }
 
