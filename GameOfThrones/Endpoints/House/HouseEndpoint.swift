@@ -7,7 +7,7 @@ enum HouseEndpoint {
 extension HouseEndpoint: Endpoint {
 
     var basePath: String {
-        return "https://anapioficeandfire.com/api/houses"
+        return "https://anapioficeandfire.com/api"
     }
 
     var headers: Headers {
@@ -19,7 +19,7 @@ extension HouseEndpoint: Endpoint {
     }
 
     var path: String {
-        return ""
+        return "houses"
     }
 }
 
