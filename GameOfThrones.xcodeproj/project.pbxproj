@@ -14,6 +14,9 @@
 		B965234D21FE037900B5CEDE /* HouseViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965234C21FE037900B5CEDE /* HouseViewModelTests.swift */; };
 		B965234F21FE06C400B5CEDE /* HouseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965234E21FE06C400B5CEDE /* HouseTableViewCell.swift */; };
 		B965235321FE12DA00B5CEDE /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965235221FE12DA00B5CEDE /* HouseDetailViewController.swift */; };
+		B965235521FE175600B5CEDE /* HouseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965235421FE175600B5CEDE /* HouseDetailViewModel.swift */; };
+		B965235721FE186F00B5CEDE /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965235621FE186F00B5CEDE /* Cell.swift */; };
+		B965235921FE2EDA00B5CEDE /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965235821FE2EDA00B5CEDE /* DetailTableViewCell.swift */; };
 		B9C0F76521F7471A00D99F67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C0F76421F7471A00D99F67 /* AppDelegate.swift */; };
 		B9C0F76721F7471A00D99F67 /* HousesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C0F76621F7471A00D99F67 /* HousesViewController.swift */; };
 		B9C0F76A21F7471A00D99F67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9C0F76821F7471A00D99F67 /* Main.storyboard */; };
@@ -44,6 +47,9 @@
 		B965234C21FE037900B5CEDE /* HouseViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewModelTests.swift; sourceTree = "<group>"; };
 		B965234E21FE06C400B5CEDE /* HouseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTableViewCell.swift; sourceTree = "<group>"; };
 		B965235221FE12DA00B5CEDE /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
+		B965235421FE175600B5CEDE /* HouseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewModel.swift; sourceTree = "<group>"; };
+		B965235621FE186F00B5CEDE /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		B965235821FE2EDA00B5CEDE /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		B9C0F76121F7471A00D99F67 /* GameOfThrones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfThrones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9C0F76421F7471A00D99F67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9C0F76621F7471A00D99F67 /* HousesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				B965234821FDFEBB00B5CEDE /* House.swift */,
+				B965235621FE186F00B5CEDE /* Cell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				B965234E21FE06C400B5CEDE /* HouseTableViewCell.swift */,
+				B965235821FE2EDA00B5CEDE /* DetailTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -173,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				B965234421FDFD5D00B5CEDE /* HouseViewModel.swift */,
+				B965235421FE175600B5CEDE /* HouseDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -278,10 +287,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B965235521FE175600B5CEDE /* HouseDetailViewModel.swift in Sources */,
 				B965234521FDFD5D00B5CEDE /* HouseViewModel.swift in Sources */,
+				B965235921FE2EDA00B5CEDE /* DetailTableViewCell.swift in Sources */,
 				B9C0F76721F7471A00D99F67 /* HousesViewController.swift in Sources */,
 				B9C0F76521F7471A00D99F67 /* AppDelegate.swift in Sources */,
 				B9C0F79121F7483300D99F67 /* NetworkService.swift in Sources */,
+				B965235721FE186F00B5CEDE /* Cell.swift in Sources */,
 				B965234F21FE06C400B5CEDE /* HouseTableViewCell.swift in Sources */,
 				B965234921FDFEBB00B5CEDE /* House.swift in Sources */,
 				B9C0F79521F7494200D99F67 /* HouseEndpoint.swift in Sources */,

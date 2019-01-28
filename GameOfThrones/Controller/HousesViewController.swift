@@ -14,7 +14,7 @@ class HousesViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.tableFooterView = UIView(frame: .zero)
-        houseViewModel.fetchHousees()
+        houseViewModel.fetchHouses()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -17,7 +17,7 @@ class HouseViewModel {
 
     func house(at index: Int) -> House { return houses[index] }
 
-    func fetchHousees() {
+    func fetchHouses() {
         guard !isLoading else { return }
 
         isLoading = true
