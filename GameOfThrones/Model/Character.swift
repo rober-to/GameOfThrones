@@ -8,4 +8,6 @@ struct Character: Decodable {
     let died: String
     let titles: [String]
     let aliases: [String]
+    let tvSeries: [String]
+    let playedBy: [String]
 }
